@@ -56,7 +56,7 @@
         number_4_euro: number_4_euro {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMBER_4_EURO";
-            bindings = <&kp KP_NUMBER_3>, <&kp DOLLAR>;
+            bindings = <&kp KP_NUMBER_4>, <&kp DOLLAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
