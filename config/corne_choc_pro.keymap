@@ -257,10 +257,10 @@
         settings {
             display-name = "settings";
             bindings = <
-  &kp C_POWER  &trans  &trans  &trans  &trans  &trans  &studio_unlock   &trans          &trans      &rgb_ug RGB_HUD                    &rgb_ug RGB_HUI                  &rgb_ug RGB_EFF
-  &trans       &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_EFF  &bt BT_PRV      &bt BT_NXT  &rgb_ug RGB_COLOR_HSB(57,90,62)    &rgb_ug RGB_COLOR_HSB(0,100,51)  &rgb_ug RGB_TOG
-  &trans       &trans  &trans  &trans  &trans                           &bt BT_CLR_ALL  &bt BT_CLR  &rgb_ug RGB_COLOR_HSB(269,100,46)  &trans                           &trans
-                       &trans  &trans  &trans                           &trans          &trans      &trans
+  &kp C_POWER  &none  &none  &none  &none  &none  &studio_unlock   &none           &none       &rgb_ug RGB_HUD                    &rgb_ug RGB_HUI                  &rgb_ug RGB_EFF
+  &none        &none  &none  &none  &none  &none  &rgb_ug RGB_EFF  &bt BT_PRV      &bt BT_NXT  &rgb_ug RGB_COLOR_HSB(57,90,62)    &rgb_ug RGB_COLOR_HSB(0,100,51)  &rgb_ug RGB_TOG
+  &none        &none  &none  &none  &none                          &bt BT_CLR_ALL  &bt BT_CLR  &rgb_ug RGB_COLOR_HSB(269,100,46)  &none                            &none
+                      &none  &none  &none                          &none           &none       &none
             >;
         };
 
