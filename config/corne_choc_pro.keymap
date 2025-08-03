@@ -217,7 +217,7 @@
                   &kp LEFT_CONTROL  &mo 1  &kp SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
             >;
 
-            sensor-bindings = <&rot_mouse_scroll>;
+            sensor-bindings = <&rot_mouse_scroll &rot_mouse_scroll &rot_mouse_scroll &rot_mouse_scroll>;
         };
 
         lower_layer {
@@ -235,7 +235,7 @@
   &trans       &trans    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &trans
                          &trans          &trans                &trans                                     &trans      &trans           &kp KP_NUMBER_0
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -253,7 +253,7 @@
   &kp KP_DIVIDE    &kp ASTRK       &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp F9  &kp F10  &kp F11       &kp F12  &trans
                                    &trans            &trans                &trans                                 &trans  &trans   &kp LEFT_GUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         settings {
@@ -264,7 +264,7 @@
   &none        &none  &none  &none  &none                          &bt BT_CLR_ALL  &bt BT_CLR  &rgb_ug RGB_COLOR_HSB(269,100,46)  &none                            &none
                       &none  &none  &none                          &none           &none       &none
             >;
-            sensor-bindings = <&rot_rgb>;
+            sensor-bindings = <&rot_rgb &rot_rgb &rot_rgb &rot_rgb>;
         };
 
         extra_layer_2 {
