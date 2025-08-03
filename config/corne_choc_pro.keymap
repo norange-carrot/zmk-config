@@ -97,6 +97,34 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        rot_mouse_scroll: rot_mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROT_MOUSE_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+
+        rot_page: rot_page {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROT_PAGE";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
+        };
+
+        rot_volume: rot_volume {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROT_VOLUME";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOL_DN>;
+        };
+
+        rot_rgb: rot_rgb {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROT_RGB";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
     };
 
     macros {
