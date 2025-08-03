@@ -47,7 +47,7 @@
         number_5_oe: number_5_oe {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMBER_5_OE";
-            bindings = <&kp KP_NUMBER_5>, <&kp DOLLAR>;
+            bindings = <&kp KP_NUMBER_5>, <&oe>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -56,10 +56,118 @@
         number_4_euro: number_4_euro {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMBER_4_EURO";
-            bindings = <&kp KP_NUMBER_4>, <&kp DOLLAR>;
+            bindings = <&kp KP_NUMBER_4>, <&euro_sign>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
+        };
+
+        number_6_ue: number_6_ue {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_6_UE";
+            bindings = <&kp KP_NUMBER_6>, <&ue>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_7_ae: number_7_ae {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_7_AE";
+            bindings = <&kp KP_NUMBER_7>, <&ae>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_8_ss: number_8_ss {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_8_SS";
+            bindings = <&kp KP_NUMBER_8>, <&ss>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_9_pipe: number_9_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_9_PIPE";
+            bindings = <&kp KP_NUMBER_9>, <&kp PIPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+    };
+
+    macros {
+        ue: ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp Y>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "UE";
+        };
+
+        oe: oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp P>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "OE";
+        };
+
+        ae: ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "AE";
+        };
+
+        ss: ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "SS";
+        };
+
+        euro_sign: euro_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "EURO_SIGN";
         };
     };
 
@@ -95,8 +203,8 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-  &kp PERCENT  &trans    &kp UP_ARROW      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSPACE  &kp K_MUTE  &kp ESCAPE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp DELETE
-  &trans       &kp LEFT  &kp DOWN_ARROW    &kp RIGHT             &kp AT_SIGN            &kp ENTER      &trans      &kp HOME    &number_4_euro   &number_5_oe     &kp KP_NUMBER_6   &kp RSHFT
+  &kp PERCENT  &trans    &kp UP_ARROW      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSPACE  &kp K_MUTE  &kp ESCAPE  &number_7_ae     &number_8_ss     &number_9_pipe    &kp DELETE
+  &trans       &kp LEFT  &kp DOWN_ARROW    &kp RIGHT             &kp AT_SIGN            &kp ENTER      &trans      &kp HOME    &number_4_euro   &number_5_oe     &number_6_ue      &kp RSHFT
   &trans       &trans    &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &kp RIGHT_ALT
                          &kp LEFT_CONTROL  &trans                &kp SPACE                                         &kp TAB     &trans           &kp KP_NUMBER_0
             >;
