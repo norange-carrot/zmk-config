@@ -96,7 +96,7 @@
 
             bindings = <
   &kp EXCLAMATION  &kp QUESTION  &kp UP_ARROW      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSPACE  &kp K_MUTE  &kp ESCAPE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp DELETE
-  &trans           &kp LEFT      &kp DOWN_ARROW    &kp RIGHT             &kp AT                 &kp ENTER      &trans      &kp HOME    &number_4_euro   &number_5_oe     &kp KP_NUMBER_6   &kp RSHFT
+  &trans           &kp LEFT      &kp DOWN_ARROW    &kp RIGHT             &kp AT_SIGN            &kp ENTER      &trans      &kp HOME    &number_4_euro   &number_5_oe     &kp KP_NUMBER_6   &kp RSHFT
   &trans           &trans        &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &kp RIGHT_ALT
                                  &kp LEFT_CONTROL  &trans                &kp SPACE                                         &kp TAB     &trans           &kp KP_NUMBER_0
             >;
@@ -119,12 +119,12 @@
             >;
         };
 
-        extra_layer_1 {
+        settings {
             display-name = "settings";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &kp K_POWER     &trans      &bl BL_TOG                      &bl BL_CYCLE                     &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_EFF  &bt BT_PRV      &bt BT_NXT  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,51)  &trans
-  &trans  &trans  &trans  &trans  &trans                           &bt BT_CLR_ALL  &bt BT_CLR  &trans                          &trans                           &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &kp K_POWER     &trans      &bl BL_TOG                         &bl BL_CYCLE                     &rgb_ug RGB_EFF
+  &trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_EFF  &bt BT_PRV      &bt BT_NXT  &rgb_ug RGB_COLOR_HSB(57,90,62)    &rgb_ug RGB_COLOR_HSB(0,100,51)  &trans
+  &trans  &trans  &trans  &trans  &trans                           &bt BT_CLR_ALL  &bt BT_CLR  &rgb_ug RGB_COLOR_HSB(269,100,46)  &trans                           &trans
                   &trans  &trans  &trans                           &trans          &trans      &trans
             >;
         };
