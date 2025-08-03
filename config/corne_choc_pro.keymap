@@ -25,6 +25,42 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        number_2_and: number_2_and {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_2_AND";
+            bindings = <&kp KP_NUMBER_2>, <&kp AMPS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_3_dollar: number_3_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_3_DOLLAR";
+            bindings = <&kp KP_NUMBER_3>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_5_oe: number_5_oe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_5_OE";
+            bindings = <&kp KP_NUMBER_5>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        number_4_euro: number_4_euro {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMBER_4_EURO";
+            bindings = <&kp KP_NUMBER_3>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -61,7 +97,7 @@
             bindings = <
   &kp EXCLAMATION  &kp QUESTION  &kp UP_ARROW      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSPACE  &kp K_MUTE  &kp ESCAPE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DELETE
   &trans           &kp LEFT      &kp DOWN_ARROW    &kp RIGHT             &kp AT                 &kp ENTER      &trans      &kp HOME    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RSHFT
-  &trans           &trans        &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp END     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_ALT
+  &trans           &trans        &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp END     &number_1_tilde  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_ALT
                                  &kp LEFT_CONTROL  &trans                &kp SPACE                                         &kp TAB     &trans           &kp KP_NUMBER_0
             >;
         };
