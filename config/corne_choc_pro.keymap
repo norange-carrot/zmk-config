@@ -163,7 +163,7 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp E>,
+                <&kp KP_NUMBER_5>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
 
