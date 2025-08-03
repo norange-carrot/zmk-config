@@ -184,10 +184,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W    &kp E             &kp R  &kp T      &kp BACKSPACE  &mt K_MUTE PRINTSCREEN  &kp Y    &kp U  &kp I         &kp O    &kp P
-  &kp A  &lt 3 S  &kp D             &kp F  &kp G      &kp ENTER      &msc SCRL_UP            &kp H    &kp J  &kp K         &kp L    &kp RIGHT_SHIFT
-  &kp Z  &kp X    &kp C             &kp V  &kp B                                             &kp N    &kp M  &kp COMMA     &kp DOT  &kp RIGHT_ALT
-                  &kp LEFT_CONTROL  &mo 1  &kp SPACE                                         &kp TAB  &mo 2  &kp LEFT_GUI
+  &kp Q  &kp W    &kp E             &kp R  &kp T      &kp BACKSPACE  &mt K_MUTE PRINTSCREEN  &kp Y      &kp U  &kp I         &kp O    &kp P
+  &kp A  &lt 3 S  &kp D             &kp F  &kp G      &kp TAB        &msc SCRL_UP            &kp H      &kp J  &kp K         &kp L    &kp RIGHT_SHIFT
+  &kp Z  &kp X    &kp C             &kp V  &kp B                                             &kp N      &kp M  &kp COMMA     &kp DOT  &kp RIGHT_ALT
+                  &kp LEFT_CONTROL  &mo 1  &kp SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -203,10 +203,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-  &kp PERCENT  &trans    &kp UP_ARROW      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSPACE  &kp K_MUTE  &kp ESCAPE  &number_7_ae     &number_8_ss     &number_9_pipe    &kp DELETE
-  &trans       &kp LEFT  &kp DOWN_ARROW    &kp RIGHT             &kp AT_SIGN            &kp ENTER      &trans      &kp HOME    &number_4_euro   &number_5_oe     &number_6_ue      &kp RSHFT
-  &trans       &trans    &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &kp RIGHT_ALT
-                         &kp LEFT_CONTROL  &trans                &kp SPACE                                         &kp TAB     &trans           &kp KP_NUMBER_0
+  &kp PERCENT  &trans    &kp UP_ARROW    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &kp K_MUTE  &kp ESCAPE  &number_7_ae     &number_8_ss     &number_9_pipe    &kp DELETE
+  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT             &kp AT_SIGN            &trans  &trans      &kp HOME    &number_4_euro   &number_5_oe     &number_6_ue      &trans
+  &trans       &trans    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &trans
+                         &trans          &trans                &trans                                     &trans      &trans           &kp KP_NUMBER_0
             >;
         };
 
@@ -220,10 +220,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-  &kp EXCLAMATION  &kp QUESTION    &kp UP_ARROW      &kp POUND             &kp MINUS              &kp BACKSPACE  &trans  &kp F1   &kp F2   &kp F3        &kp F4   &trans
-  &kp BACKSLASH    &kp LEFT_ARROW  &kp DOWN          &kp RIGHT             &kp EQUAL              &kp ENTER      &trans  &kp F5   &kp F6   &kp F7        &kp F8   &kp RIGHT_SHIFT
-  &kp KP_DIVIDE    &kp ASTRK       &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                         &kp F9   &kp F10  &kp F11       &kp F12  &kp RIGHT_ALT
-                                   &kp RCTRL         &trans                &kp SPACE                                     &kp TAB  &trans   &kp LEFT_GUI
+  &kp EXCLAMATION  &kp QUESTION    &kp UP_ARROW      &kp POUND             &kp MINUS              &trans  &trans  &kp F1  &kp F2   &kp F3        &kp F4   &trans
+  &kp BACKSLASH    &kp LEFT_ARROW  &kp DOWN          &kp RIGHT             &kp EQUAL              &trans  &trans  &kp F5  &kp F6   &kp F7        &kp F8   &trans
+  &kp KP_DIVIDE    &kp ASTRK       &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp F9  &kp F10  &kp F11       &kp F12  &trans
+                                   &trans            &trans                &trans                                 &trans  &trans   &kp LEFT_GUI
             >;
         };
 
