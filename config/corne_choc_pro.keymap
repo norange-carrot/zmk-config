@@ -97,13 +97,6 @@
             mods = <(MOD_RSFT)>;
         };
 
-        rot_mouse_scroll: rot_mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ROT_MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_AC_SCROLL_UP>, <&kp C_AC_SCROLL_DOWN>;
-        };
-
         rot_rgb: rot_rgb {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ROT_RGB";
@@ -203,7 +196,7 @@
                   &kp LEFT_ALT  &mo 1  &mt LEFT_CONTROL SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
             >;
 
-            sensor-bindings = <&rot_mouse_scroll &rot_mouse_scroll &rot_mouse_scroll &rot_mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         lower_layer {
