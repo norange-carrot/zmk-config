@@ -101,7 +101,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ROT_MOUSE_SCROLL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&kp C_AC_SCROLL_UP>, <&kp C_AC_SCROLL_DOWN>;
         };
 
         rot_rgb: rot_rgb {
