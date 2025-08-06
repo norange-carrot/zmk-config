@@ -22,7 +22,7 @@
             bindings = <&kp KP_NUMBER_1>, <&kp TILDE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_2_and: number_2_and {
@@ -31,7 +31,7 @@
             bindings = <&kp KP_NUMBER_2>, <&kp AMPS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_3_dollar: number_3_dollar {
@@ -40,7 +40,7 @@
             bindings = <&kp KP_NUMBER_3>, <&kp DOLLAR>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_5_oe: number_5_oe {
@@ -49,7 +49,7 @@
             bindings = <&kp KP_NUMBER_5>, <&oe>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_4_euro: number_4_euro {
@@ -58,7 +58,7 @@
             bindings = <&kp KP_NUMBER_4>, <&euro_sign>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_6_ue: number_6_ue {
@@ -67,7 +67,7 @@
             bindings = <&kp KP_NUMBER_6>, <&ue>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_7_ae: number_7_ae {
@@ -76,7 +76,7 @@
             bindings = <&kp KP_NUMBER_7>, <&ae>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_8_ss: number_8_ss {
@@ -85,7 +85,7 @@
             bindings = <&kp KP_NUMBER_8>, <&ss>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         number_9_pipe: number_9_pipe {
@@ -94,7 +94,7 @@
             bindings = <&kp KP_NUMBER_9>, <&kp PIPE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         rot_rgb: rot_rgb {
@@ -169,7 +169,7 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_5>,
+                <&kp N5>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
 
