@@ -175,6 +175,34 @@
 
             label = "EURO_SIGN";
         };
+
+        vscode_terminal: vscode_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "VSCODE_TERMINAL";
+        };
+
+        vscode_navigate_back: vscode_navigate_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>;
+
+            label = "VSCODE_NAVIGATE_BACK";
+        };
     };
 
     keymap {
@@ -190,10 +218,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q             &kp W    &kp E         &kp R  &kp T                   &kp BACKSPACE  &mt K_MUTE PRINTSCREEN  &kp Y      &kp U  &kp I         &kp O    &kp P
-  &kp A             &lt 3 S  &kp D         &kp F  &kp G                   &kp TAB        &msc SCRL_UP            &kp H      &kp J  &kp K         &kp L    &kp RIGHT_SHIFT
-  &mt LEFT_SHIFT Z  &kp X    &kp C         &kp V  &kp B                                                          &kp N      &kp M  &kp COMMA     &kp DOT  &mt RIGHT_CONTROL DELETE
-                             &kp LEFT_ALT  &mo 1  &mt LEFT_CONTROL SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
+  &kp Q             &kp W  &kp E         &kp R  &kp T                   &kp BACKSPACE  &mt K_MUTE PRINTSCREEN  &kp Y      &kp U  &kp I         &kp O      &kp P
+  &kp A             &kp S  &kp D         &kp F  &kp G                   &lt 3 TAB      &msc SCRL_UP            &kp H      &kp J  &kp K         &kp L      &kp RIGHT_SHIFT
+  &mt LEFT_SHIFT Z  &kp X  &kp C         &kp V  &kp B                                                          &kp N      &kp M  &kp COMMA     &lt 4 DOT  &kp DELETE
+                           &kp LEFT_ALT  &mo 1  &mt LEFT_CONTROL SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -249,13 +277,13 @@
             sensor-bindings = <&rot_rgb &rot_rgb &rot_rgb &rot_rgb>;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        vs_code {
+            display-name = "vs_code";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans                  &trans  &trans  &trans
+  &none             &none                  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &vscode_terminal  &vscode_navigate_back  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+  &none             &none                  &none  &none  &none                &none  &none  &none  &none  &none
+                                           &none  &none  &none                &none  &none  &none
             >;
         };
 
