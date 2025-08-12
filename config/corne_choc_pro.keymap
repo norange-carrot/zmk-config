@@ -355,9 +355,9 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-  &kp PERCENT    &trans    &kp UP_ARROW    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &kp K_MUTE  &kp ESCAPE  &number_7_ae     &number_8_ss     &number_9_pipe    &kp DELETE
-  &kp BACKSLASH  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT             &kp AT_SIGN            &trans  &trans      &kp HOME    &number_4_euro   &number_5_oe     &number_6_ue      &trans
-  &trans         &trans    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &trans
+  &none          &none     &kp UP_ARROW    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &kp K_MUTE  &kp ESCAPE  &number_7_ae     &number_8_ss     &number_9_pipe    &kp AT
+  &kp BACKSLASH  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT             &kp PERCENT            &trans  &trans      &kp HOME    &number_4_euro   &number_5_oe     &number_6_ue      &trans
+  &none          &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp END     &number_1_tilde  &number_2_and    &number_3_dollar  &trans
                            &trans          &trans                &trans                                     &trans      &trans           &kp KP_NUMBER_0
             >;
 
