@@ -203,6 +203,124 @@
 
             label = "VSCODE_NAVIGATE_BACK";
         };
+
+        vscode_comment: vscode_comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp SLASH>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "VSCODE_COMMENT";
+        };
+
+        vscode_editor: vscode_editor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "VSCODE_EDITOR";
+        };
+
+        vscode_copilot: vscode_copilot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>;
+
+            label = "VSCODE_COPILOT";
+        };
+
+        vscode_function_hopping: vscode_function_hopping {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "VSCODE_FUNCTION_HOPPING";
+        };
+
+        vscode_search: vscode_search {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "VSCODE_SEARCH";
+        };
+
+        vscode_navigate_forward: vscode_navigate_forward {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "VSCODE_NAVIGATE_FORWARD";
+        };
+
+        vscode_format: vscode_format {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
+
+            label = "VSCODE_FORMAT";
+        };
+
+        vscode_close_windows: vscode_close_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "VSCODE_CLOSE_WINDOWS";
+        };
     };
 
     keymap {
@@ -280,10 +398,10 @@
         vs_code {
             display-name = "vs_code";
             bindings = <
-  &none             &none                  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-  &vscode_terminal  &vscode_navigate_back  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-  &none             &none                  &none  &none  &none                &none  &none  &none  &none  &none
-                                           &none  &none  &none                &none  &none  &none
+  &none                  &kp F12         &vscode_navigate_back  &vscode_navigate_forward  &none                     &vscode_format  &none  &none  &none  &none  &none  &none
+  &vscode_terminal       &vscode_editor  &vscode_copilot        &vscode_comment           &vscode_function_hopping  &none           &none  &none  &none  &none  &none  &none
+  &vscode_close_windows  &none           &none                  &vscode_search            &kp F4                                           &none  &none  &none  &none  &none
+                                         &none                  &none                     &none                                            &none  &none  &none
             >;
         };
 
