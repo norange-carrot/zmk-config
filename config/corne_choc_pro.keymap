@@ -446,7 +446,7 @@
                 &mt LEFT_ALT TAB  &mo 1  &mt LEFT_CONTROL SPACE                                         &kp ENTER  &mo 2  &kp LEFT_GUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
